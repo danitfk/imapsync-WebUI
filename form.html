@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Sync your Email</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href='custom.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-xl-8 offset-xl-2 py-5">
+
+<form id="contact-form" method="post" action="/" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_name">Source Server</label>
+                    <input id="form_name" type="text" name="host1" class="form-control" placeholder="Eg: mail1.domain.com" required="required" data-error="Source Server in required">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_name">Email Address</label>
+                    <input id="form_name" type="email" name="email" class="form-control" placeholder="Eg: email@example.com" required="required" data-error="EMail Address is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_lastname">Password</label>
+                    <input id="form_lastname" type="password" name="oldpass" class="form-control" placeholder="Your previous password on old server" required="required" data-error="Old pass is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_name">Destination Server</label>
+                    <input id="form_name" type="text" name="host2" class="form-control" placeholder="Eg: mail2.domain.com" required="required" data-error="Destinatino Server is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+
+            <div class="col-md-10">
+                <div class="form-group">
+                    <label for="form_email">New Password</label>
+                    <input id="form_email" type="password" name="newpass" class="form-control" placeholder="You current passowrd on new server" required="required" data-error="New pass is required">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Sync Emails">
+            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
+
