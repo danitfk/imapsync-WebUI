@@ -10,7 +10,7 @@ import (
 )
 
 
-func hello(w http.ResponseWriter, r *http.Request) {
+func imapsync(w http.ResponseWriter, r *http.Request) {
     if r.URL.Path != "/" {
         http.Error(w, "404 not found.", http.StatusNotFound)
         return
@@ -40,7 +40,7 @@ func hello(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-    http.HandleFunc("/", hello)
+    http.HandleFunc("/", imapsync)
     fmt.Printf("Starting server for testing HTTP POST...\n")
 
     if err := http.ListenAndServe(":8081", nil); err != nil {
