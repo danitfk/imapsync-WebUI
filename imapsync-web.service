@@ -1,0 +1,12 @@
+[Unit]
+Description=ImapSync WebApplication
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=60s
+WorkingDirectory=/opt/imapsync-web
+ExecStart=/opt/imapsync-web/imapsync-web
+
+[Install]
+WantedBy=multi-user.target
